@@ -1,0 +1,34 @@
+{
+  "exam": "30th BCS Preliminary",
+  "source": "output/30th_bcs.json",
+  "answers": [
+    {
+      "question_number": 19,
+      "correct_answer": "C",
+      "confidence": "disputed",
+      "note": "'পাহাড়তলী' গ্রামে জন্মগ্রহণ — biddabari: অপশনে সঠিক উত্তর নেই, তবে 'গ' (শামসুর রাহমান) সর্বাধিক গ্রহণযোগ্য (পৈতৃক নিবাস পাড়াতলী); kgc সংকলনে ৪র্থ অপশন 'উপরের কোনটি সঠিক নয়'। পরীক্ষাকালীন প্রচলিত উত্তর C।"
+    },
+    {
+      "question_number": 57,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "রেডক্রস প্রতিষ্ঠা ১৮৬৩। প্রকৃত পরীক্ষার ৪র্থ অপশন '১৮৬৩ সালে' — উৎস HTML-এ '১৮৬১' হয়ে গিয়েছিল; option_d পুনরুদ্ধার করে D বসানো হয়েছে (kgc #৯২ + biddabari)।"
+    },
+    {
+      "question_number": 90,
+      "correct_answer": "B",
+      "confidence": "high",
+      "note": "প্রশ্ন ছাপায় মিশ্র-চিহ্ন ত্রুটিপূর্ণ ছিল; kgc #২৫ অনুযায়ী a+1/a=3 ⇒ a³+1/a³ = 18 (খ)। আগের math-audit-এর D=36 বাতিল করে প্রশ্ন সংশোধন করে B বসানো হয়েছে।"
+    }
+  ],
+  "manual_human_check": [
+    {
+      "question_numbers": [
+        32,
+        35,
+        39
+      ],
+      "reason": "image-only questions (images/30th_bcs/) — this session could not view images"
+    }
+  ]
+}

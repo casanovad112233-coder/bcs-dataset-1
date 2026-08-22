@@ -1,0 +1,54 @@
+{
+  "exam": "28th BCS Preliminary",
+  "source": "output/28th_bcs.json",
+  "answers": [
+    {
+      "question_number": 47,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "option_d restored '৯০'→'৩৫.১৩৫ ব.মা.' (kgc #81)"
+    },
+    {
+      "question_number": 48,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "option_d restored '৮৩৯০০'→'৮৭,৩৭২টি' (kgc #80)"
+    },
+    {
+      "question_number": 50,
+      "correct_answer": "A",
+      "confidence": "high",
+      "note": "kgc #78: সেন্টমার্টিন"
+    },
+    {
+      "question_number": 53,
+      "correct_answer": "A",
+      "confidence": "high",
+      "note": "option_a restored 'ফ্লোরিডা'→'ওয়াশিংটন' (kgc #91)"
+    },
+    {
+      "question_number": 56,
+      "correct_answer": "A",
+      "confidence": "high",
+      "note": "exam-era Nov 2008: সার্কোজি; kgc compilation anachronistic"
+    },
+    {
+      "question_number": 62,
+      "correct_answer": "A",
+      "confidence": "high",
+      "note": "option_a restored '১'→'১০ ক্যালরি'; 1×1×10=10 cal (kgc #29)"
+    },
+    {
+      "question_number": 91,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "option_d restored '19'→'20' (kgc #96 + ExamDao); supersedes earlier D=19"
+    }
+  ],
+  "manual_human_check": [
+    {
+      "question_numbers": [],
+      "reason": ""
+    }
+  ]
+}

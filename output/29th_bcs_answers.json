@@ -1,0 +1,42 @@
+{
+  "exam": "29th BCS Preliminary",
+  "source": "output/29th_bcs.json",
+  "answers": [
+    {
+      "question_number": 42,
+      "correct_answer": "C",
+      "confidence": "high",
+      "note": "kgc #৭৭: ৩৪টি"
+    },
+    {
+      "question_number": 48,
+      "correct_answer": "A",
+      "confidence": "high",
+      "note": "kgc #৭৯: ভারত (অপশনে ভুটান নেই)"
+    },
+    {
+      "question_number": 50,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "kgc #১: গৌড়"
+    },
+    {
+      "question_number": 56,
+      "correct_answer": "B",
+      "confidence": "high",
+      "note": "পরীক্ষাকাল ২০০৯: হিলারি ক্লিনটন"
+    },
+    {
+      "question_number": 57,
+      "correct_answer": "B",
+      "confidence": "high",
+      "note": "পরীক্ষাকাল ২০০৯: মনমোহন সিং"
+    }
+  ],
+  "manual_human_check": [
+    {
+      "question_numbers": [],
+      "reason": ""
+    }
+  ]
+}

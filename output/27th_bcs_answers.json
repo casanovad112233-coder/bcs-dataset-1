@@ -1,0 +1,36 @@
+{
+  "exam": "27th BCS Preliminary",
+  "source": "output/27th_bcs.json",
+  "answers": [
+    {
+      "question_number": 54,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "৪২৬ জন বীরপ্রতীক"
+    },
+    {
+      "question_number": 61,
+      "correct_answer": "D",
+      "confidence": "high",
+      "note": "option_d restored '৬.৮'→'৫.৫৮' (kgc #29; 2005-era proposed length)"
+    },
+    {
+      "question_number": 97,
+      "correct_answer": "D",
+      "confidence": "disputed",
+      "note": "exam-era ARF=25 (not offered); 26 filled as most acceptable (Bangladesh's pending accession)"
+    },
+    {
+      "question_number": 100,
+      "correct_answer": "C",
+      "confidence": "high",
+      "note": "Talabani: কুর্দি"
+    }
+  ],
+  "manual_human_check": [
+    {
+      "question_numbers": [],
+      "reason": ""
+    }
+  ]
+}
