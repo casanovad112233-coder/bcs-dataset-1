@@ -153,3 +153,37 @@ Per-exam report pass: fix problems listed in each `output/<stem>_bcs_report.md`,
 - Filled 3 answers: q27=A Jolly (Jovial), q55=A Tunis (PLO HQ 1982–91, now Ramallah), q59=C 158 UN members 1989 (~159, C closest). `output/10th_bcs_answers.json` = {27:A,55:A,59:C}. Solve notes 2: q2 মুমূর্ষু, q24 Till he came. Validation: PASS.
 
 Queue: 19th→10th all DONE (10 exams this batch: 19,18,17,16,15,14,13,12,11,10). Full repo 10th→50th now DONE.
+
+## Manual instructions pass (2026-08-24, Manual_Instructions.txt) - DONE
+
+Human-reviewed fixes applied DIRECTLY to canonical JSONs (`data/processed/json/`) — do NOT re-run pipeline. New images came from `C:\Users\isang\Downloads\new_images` (11 PNGs), copied into `images/<exam>/` per naming convention:
+
+- **34th q100**: answer cleared to blank; solve note replaced with 'সঠিক উত্তর অপশনে নেই।' (supersedes the kgc-keyed A fill).
+- **35th q1**: image-only question converted to TEXT question ('"পুরষ্কার-বিতরণী অনুষ্ঠানের পরিবেশ এত অপরিস্কার"। -বাক্যটির নিম্নরেখ পদে ষ/স ব্যবহারে-'); q1_img1.jpg deleted.
+- **35th q183**: new image copied over `q183_img1.png`; options set to ক/খ/গ/ঘ (answer B kept). CORRECTION (same day): `q183_img1.png` in new_images was actually **36th** q183's image, mislabeled in instructions — 35th q183 reverted to original state (original image restored from git; options back to TENSION/RELATION/NATIONAL/RELATIVE, answer B). The new png went to 36th q183 instead: `images/36th_bcs/q183_img1.png` replaces old jpg (deleted), options ক/খ/গ/ঘ, answer B kept.
+- **26th q9**: option D restored to 'প্রযোজক ধাতু' (was 'নাম ধাতু'), answer filled D, provenance appended to solve note (supersedes "defective blank").
+- **46th q92**: empty option_d restored to real exam value 'কুক্কুরীপা' (verified via bcsanalysis/myexaminer/porikrama 46th keys); answer A unchanged.
+- **43rd q65**: image-only question converted to TEXT: `A = {x ∈ N | 2 < x ≤ 8}, B = {x ∈ N | x বিজোড় এবং x ≤ 9} হলে, A ∩ B = কত?`; image deleted; answer D {3,5,7} stands.
+- **43rd q76**: options set to ক/খ/গ/ঘ (everything else already correct).
+- **43rd q90**: question TEXT added ('নিচের ক, খ, গ ও ঘ বিকল্প নকশা ৪টির...'), new image overwrote `q90_img1.png` (old V/W-note was for wrong image), options ক/খ/গ/ঘ, solve note replaced with '৩য় চিত্রে ১টি উল্টেছে। প্রশ্ন চিত্রে ২টি উল্টাবে।'
+- **38th q182**: ASCII mirror options filled (ক ƎЯAꟻИU / খ UИƎAЯƎ / গ ∩ИƎAЯƎ / ঘ কোনটিই নয়), explanation rewritten around them; answer A.
+- **40th q180**: ASCII mirror options (ꟻƎƆIИ∩/ꟻƎƆIИU/ꟻƎCIN∩/ꟻƎCINU), [html][txt] junk removed, note rewritten; answer B.
+- **40th q184/q185/q186**: new images copied over `q18{4,5,6}_img1.png`, options ক/খ/গ/ঘ. q186: `q186_img3.png` deleted (JSON+disk), solve note text removed (image-only solve via img2 remains), answer D.
+- **41st q88**: ASCII mirror options (ИOITA⅃ƎЯ/...), answer A.
+- **42nd q85**: new png replaces old jpg (`q85_img1.png`), options ক/খ/গ/ঘ, no text solve needed, answer B.
+- **44th q194**: ASCII mirror options (YROMƎM/YЯOMƎM/MEMORY/YЯOWEM), answer B, image-only solve kept.
+- **45th q121**: NEW question image `q121_img1.png` added (had none), options ক/খ/গ/ঘ, solve note corrected to ‘ক’ version (was ‘গ’).
+- **36th q183**: new png replaces old jpg (`q183_img1.png`), options ক/খ/গ/ঘ, answer B kept; question text added later per human review: 'কোনটি প্রদত্ত চিত্র এর আয়নার প্রতিফলন?'
+- **45th q126**: ASCII mirror options ЯOSE/ЯOSƎ/ƎƧOЯ/ƎSOЯ (option_d 'কোনোটিই নয়' replaced), answer C.
+- **45th q127**: new png replaces `q127_img1.jpg`; options ক/খ/গ/ঘ; answer B.
+- **46th q22**: NEW question image `q22_img1.png` added, options ক/খ/গ/ঘ, answer C.
+- **46th q25**: new png replaces `q25_img1.jpg`, options ক/খ/গ/ঘ.
+- **47th q180**: NEW question image added as `q180_img1.png`; existing solve image RENAMED `q180_img1.jpg`→`q180_img2.jpg` (question-images-first naming rule); options ক/খ/গ/ঘ; answer D.
+- Template sync: output/34th_bcs_answers.json 100:A→null; output/26th_bcs_answers.json 9:null→D; output/34th_bcs_solve_notes.json[100] + output/38th_bcs_solve_notes.json[182] updated to match.
+- Validation run across all 41 JSONs after edits: ALL CLEAN (parse, counts, image files exist, flag parity, no mojibake).
+
+### manual_verification_10th_50th.html generator (current behavior)
+- Shows ONLY questions needing human verification. Inclusion = structural issues detected from JSONs (image-only prompt / empty options / blank answer) OR entries in `output/manual_check_queue.json`.
+- `output/manual_check_queue.json`: explicit still-needs-eyes queue. Human confirmed 2026-08-24: 29th q48, 36th q183 (text + image), 40th q184-186, 42nd q85, 45th q121/q127, 46th q22/q25, 47th q180 — all removed; queue now EMPTY. Remaining manual HTML items are structural-only (image-only prompts / empty option images / defective blanks).
+- Report "Manual/human check" flags are now badge-only (stale reports must not resurrect fixed items).
+- Card layout per spec: question text → question image(s) → options → solve note (+solve images inside solve block). Subject sort/filter chips + exam-order sort. Click-to-zoom lightbox (fit ↔ actual size).

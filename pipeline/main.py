@@ -35,7 +35,9 @@ from .taxonomy import load_taxonomy
 from .validate import validate_json_file
 
 ROOT = Path(__file__).resolve().parent.parent
-TAXONOMY_PATH = ROOT / "topics_taxonomy.md"
+# Canonical location is instructions/topics_taxonomy.md; keep legacy root fallback for transition
+_TAXONOMY_CANDIDATE = ROOT / "instructions" / "topics_taxonomy.md"
+TAXONOMY_PATH = _TAXONOMY_CANDIDATE if _TAXONOMY_CANDIDATE.exists() else ROOT / "topics_taxonomy.md"
 OUTPUT_DIR = ROOT / "output"
 # Minimal tidy layout: raw HTML under data/raw/html, processed JSON under data/processed/json
 RAW_HTML_DIR = ROOT / "data" / "raw" / "html"

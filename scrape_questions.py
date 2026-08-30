@@ -14,7 +14,9 @@ from dotenv import load_dotenv
 from firecrawl import V1FirecrawlApp
 
 ROOT = Path(__file__).resolve().parent
-LINKS_FILE = ROOT / "links_to_scrape.md"
+# Canonical location is instructions/links_to_scrape.md; keep legacy root fallback
+_LINKS_CANDIDATE = ROOT / "instructions" / "links_to_scrape.md"
+LINKS_FILE = _LINKS_CANDIDATE if _LINKS_CANDIDATE.exists() else ROOT / "links_to_scrape.md"
 RAW_HTML_DIR = ROOT / "data" / "raw" / "html"
 
 URL_RE = re.compile(r"https://uttoron\.academy/QuestionBank/QuestionPreview/([0-9]+(?:st|nd|rd|th)-bcs)")

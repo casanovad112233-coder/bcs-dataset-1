@@ -1,4 +1,4 @@
-"""Taxonomy (ground truth from topics_taxonomy.md) and source subject-tag mapping."""
+"""Taxonomy (ground truth from instructions/topics_taxonomy.md) and source subject-tag mapping."""
 import re
 from pathlib import Path
 
