@@ -11,7 +11,7 @@ Operational memory for the BCS question-bank repo (uttoron.academy scrapes -> pi
 
 - Firecrawl free plan: ~11 req/min. Use `--delay 6` and retry logic; 429s appear mid-batch.
 - 41st & 37th come back as empty shells (54 bytes) from Firecrawl; fall back to plain `curl`. Their `<img src>` paths are root-relative (`/media/...`); the pipeline resolves them against `https://uttoron.academy`.
-- Some pages have a 200-question layout; early exams (10th-14th, etc.) have 100, 19th has 50, 17th has 70. Always trust the parse count, not a fixed 200.
+- Some pages have a 200-question layout; early exams (10th-14th, etc.) have 100, 19th has 50. 17th was long listed as 70 (old scrape 234KB) but live source now shows 100 (verified 2026-08-31 via direct HTML fetch: 363KB, 100 .single-question blocks). Always trust the parse count, not a fixed 200.
 
 ## Pipeline fixes applied
 
@@ -130,6 +130,7 @@ Per-exam report pass: fix problems listed in each `output/<stem>_bcs_report.md`,
 
 ## 17th BCS (1995-01-01, Set পদ্ম) - DONE
 - Filled q38=B (সুইজারল্যান্ড — 1995 not UN member, joined 10 Sep 2002 190th), q64=A (ইন্দোনেশিয়া — DISPUTED: taught as only non-Arab Asian OPEC at exam, but 1995 had two (Indonesia+Iran); Indonesia left 2009/2016, now multiple non-Arab). `output/17th_bcs_answers.json` = {38:B,64:A}. Solve notes: q5 Jan Bakhsh Khan, q13 Casa Botín Madrid 1725, q21 punctuation, q48 embryo 5 May 1995, q70 **option restoration** 2/3/4/5 ভাগে → answer B তিন ভাগে (যৌগিক/রূঢ়/যোগরূঢ়) — HTML had only empty A, B-D missing (source-error like 28th/31st). Direct JSON + HTML patch noted. Validation: PASS (0 warnings).
+- **Update 2026-08-31:** Live source re-fetched (https://uttoron.academy/QuestionBank/QuestionPreview/17th-bcs) now shows 100 blocks (363KB) vs old local 70 (234KB). Re-scraped via `requests` → `data/raw/html/17th_bcs.html`, reran `python -m pipeline` → now **100 questions** (was 70). New q71-100 all mapped, 6 images (q9,30,35,43,44,98), 2 warnings for missing solve notes (q79,q82). Total repo now **5,350** questions (was 5,320). Old 70→100 diff in git. Previous q70 restoration now obsolete (live now has full options).
 
 ## 16th BCS (1994-01-01, Set শাপলা) - DONE
 - Filled q35=B (25 July 1994 Washington Declaration, King Hussein & Rabin; treaty 26 Oct Aqaba — html solve wrongly cited treaty date). `output/16th_bcs_answers.json` = {35:B}. Solve notes 8: q8 উৎকৃষ্ট, q17 Endeavour STS-61, q53 16 July 1994 SL9, q54 Dostum/Hekmatyar Kabul 1 Jan 1994, q78 digital signal, q80/q81 LDPR 12 Dec 1993 Russian Duma (duplicate), q88 375 Chakma return 21 July 1994. Validation: PASS.
