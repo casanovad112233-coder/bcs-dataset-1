@@ -54,7 +54,8 @@ Each question object must use this schema:
   "has_solve_note_image": 0,
   "has_image": 0,
   "subject_en": "Mental Ability",
-  "subject_bn": "মানসিক দক্ষতা"
+  "subject_bn": "মানসিক দক্ষতা",
+  "exam_slug": "50th_bcs"
 }
 ```
 
@@ -68,6 +69,7 @@ Rules:
 - `has_question_image` is `1` when `question_image_paths` is non-empty, otherwise `0`.
 - `has_solve_note_image` is `1` when `solve_note_image_paths` is non-empty, otherwise `0`.
 - `has_image` is `1` when either image array is non-empty, otherwise `0`.
+- `exam_slug` is the canonical exam stem (e.g. `"50th_bcs"`, `"10th_bcs"`) and must match the JSON file name `data/processed/json/<exam_slug>.json` and the pattern `N(th)_bcs`.
 - `correct_answer` must be uppercase `A`, `B`, `C`, or `D`.
 - `question_number` must be an integer.
 
@@ -110,3 +112,4 @@ Before finishing an exam JSON:
 - `solve_note` may be empty only if `solve_note_image_paths` is non-empty.
 - Every image path referenced in JSON exists on disk.
 - Image flags match the image arrays.
+- Every question has `exam_slug` equal to the file stem (e.g. `"50th_bcs"`) and matching `^\d+(st|nd|rd|th)_bcs$`.

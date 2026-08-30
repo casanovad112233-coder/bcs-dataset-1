@@ -22,12 +22,15 @@ QUESTION_KEYS = [
     "has_image",
     "subject_en",
     "subject_bn",
+    "exam_slug",
 ]
 
 
 def build_exam_json(exam: ExamData, taxonomy: dict[int, dict[str, str]]) -> dict:
     questions = []
     for q in sorted(exam.questions, key=lambda x: x["question_number"]):
+        # Ensure exam_slug is always the canonical exam stem (e.g. "50th_bcs")
+        q["exam_slug"] = exam.stem
         questions.append({key: q[key] for key in QUESTION_KEYS})
     return {
         "exam": {

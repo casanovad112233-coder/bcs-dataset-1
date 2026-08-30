@@ -132,6 +132,15 @@ def validate_json_file(path: Path, taxonomy_path: Path, expected_stem: str | Non
         if q.get("has_image") != hi:
             result.errors.append(f"{where}: has_image flag mismatch")
 
+        # exam_slug must be the canonical exam stem (e.g. "50th_bcs") and match the file
+        exam_slug = q.get("exam_slug")
+        if not isinstance(exam_slug, str) or not exam_slug:
+            result.errors.append(f"{where}: exam_slug missing or not a string")
+        elif exam_slug != stem:
+            result.errors.append(f"{where}: exam_slug {exam_slug!r} != file stem {stem!r}")
+        elif not re.fullmatch(r"\d+(?:st|nd|rd|th)_bcs", exam_slug):
+            result.errors.append(f"{where}: exam_slug {exam_slug!r} does not match pattern N(th)_bcs")
+
     return result
 
 

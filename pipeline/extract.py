@@ -162,6 +162,7 @@ def parse_exam(path: Path) -> ExamData:
             "has_question_image": 0,
             "has_solve_note_image": 0,
             "has_image": 0,
+            "exam_slug": exam.stem,
         }
         exam.questions.append(q)
         exam.images.extend(question_imgs)
