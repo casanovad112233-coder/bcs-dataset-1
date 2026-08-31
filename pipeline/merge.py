@@ -57,7 +57,7 @@ def merge(out_path: Path = DEFAULT_OUT):
             "total_exams": len(exams),
             "total_questions": len(all_q),
             "source": "data/processed/json/*_bcs.json",
-            "taxonomy_source": "instructions/topics_taxonomy.md",
+            "taxonomy_source": "topics_taxonomy.md",
         },
         "taxonomy": taxonomy or [],
         "exams": exams,

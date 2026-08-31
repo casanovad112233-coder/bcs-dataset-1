@@ -37,7 +37,7 @@ Operational memory for the BCS question-bank repo (uttoron.academy scrapes -> pi
 
 ## Classification notes
 
-- 48th/49th HTML carry no `data-subject` tag; all questions were classified manually (LLM pass) into `output/*_classification.json`. Taxonomy is the 10 fixed subjects in `topics_taxonomy.md`.
+- 48th/49th HTML carry no `data-subject` tag; all questions were classified manually (LLM pass) into `output/*_classification.json`. Taxonomy is the 10 fixed subjects in `topics_taxonomy.md` (at root).
 - Convention used: calculations/equations/logs/series -> 8 (Mathematical Reasoning); number/letter series, puzzles, direction, calendar, figure counting -> 9 (Mental Ability); idiom/grammar/literature in English -> 2; Bangla grammar/literature -> 1; SDG/UN/foreign orgs/geopolitics -> 4; Bangladesh constitution/politics/economy -> 3; rivers/forest/ozone/environment -> 5.
 
 ## Equation extraction caveat

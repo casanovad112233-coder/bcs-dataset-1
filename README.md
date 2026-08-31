@@ -1,10 +1,10 @@
-# bcs_preliminary_question_bank — BCS Preliminary Question Bank Database (10th to 50th BCS) | Bangladesh Civil Service
+# BCS Preliminary Question Bank Database (10th to 50th BCS) | Bangladesh Civil Service
 
 > **The most complete open-source BCS Question Bank database for Bangladesh.** `41` exams (10th–50th) • `5,350` questions • `10` subjects • `825` images • UTF-8 Bangla + English • Ready for Supabase/Postgres, JSON, SQLite.
 
 [![questions](https://img.shields.io/badge/questions-5,350-blue)](bcs_preliminary_question_bank.json) [![exams](https://img.shields.io/badge/exams-41-green)](data/processed/json) [![license](https://img.shields.io/badge/license-MIT-lightgrey)](#license)
 
-**If you search `bcs_preliminary_question_bank`, `bcs preliminary question bank`, `bcs_question_bank`, `bcs question bank`, `bcs database` — this is the dataset.**
+**If you search `bcs_preliminary_question_bank / dataset`, — this is the dataset you may need.**
 
 ---
 
@@ -35,16 +35,13 @@ Regenerate: `python -m pipeline.merge` (see `pipeline/merge.py:14` — writes `b
 
 ## File structure
 
-```
-bcs_preliminary_question_bank.json              # merged DB — single canonical file (SEO)
+````
+bcs_preliminary_question_bank.json              # merged DB — single canonical file
 schema.md                                       # full schema + Supabase DDL
-instructions/topics_taxonomy.md                 # 10 subjects (IDs 1..10)
+topics_taxonomy.md                              # 10 subjects (IDs 1..10) — at root
 data/processed/json/*_bcs.json                  # 41 per-exam JSONs
 images/<exam_slug>/q<N>_img<K>.(jpg|png)        # 825 images, exam-scoped
 pipeline/                                       # scrape → JSON → validate
-17th_bcs_math.html / 17th_bcs_frontend.html     # math-rendered frontends
-manual_verification_10th_50th.html              # human-verify image-only / blank answers
-```
 
 ---
 
@@ -58,7 +55,7 @@ db = json.loads(pathlib.Path("bcs_preliminary_question_bank.json").read_text(enc
 print(db["metadata"])  # total_exams 41, total_questions 5350
 q = db["questions"][0] # has exam_slug, subject_id, question, option_a..d, correct_answer, solve_note, has_image...
 by_17th = [q for q in db["questions"] if q["exam_slug"]=="17th_bcs"]
-```
+````
 
 **Per-exam:**
 

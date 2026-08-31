@@ -5,7 +5,7 @@ This repo builds a BCS question bank from scraped HTML sources. The HTML files a
 ## Source Of Truth
 
 - Treat each exam HTML file as the source for the exam's questions, options, correct answers, solve notes, and image placement.
-- Treat `instructions/topics_taxonomy.md` as the ground truth taxonomy for all exams from 10th BCS through 50th BCS.
+- Treat `topics_taxonomy.md` as the ground truth taxonomy for all exams from 10th BCS through 50th BCS.
 - Do not invent, rename, reorder, or remove taxonomy subjects.
 - `subject_id` must always be an integer from `1` to `10`.
 - Every question must include `subject_id`, `subject_en`, and `subject_bn` matching the taxonomy.
