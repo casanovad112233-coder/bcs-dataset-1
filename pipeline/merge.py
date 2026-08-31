@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / "data" / "processed" / "json"
-DEFAULT_OUT = ROOT / "Bcs_Question_Bank_Db_10th_to_50th.json"
+DEFAULT_OUT = ROOT / "bcs_question_bank.json"  # canonical SEO name
 
 def exam_num(slug: str) -> int:
     m = re.match(r"(\d+)", slug)
@@ -66,18 +66,7 @@ def merge(out_path: Path = DEFAULT_OUT):
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    # also write to data/processed/ for convenience
-    alt = ROOT / "data" / "processed" / "Bcs_Question_Bank_Db_10th_to_50th.json"
-    alt.parent.mkdir(parents=True, exist_ok=True)
-    if alt != out_path:
-        alt.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    # SEO aliases — same content, lowercase/hyphenated for GitHub search `bcs_question_bank`
-    for alias in ["bcs_question_bank.json", "bcs-question-bank.json"]:
-        a = ROOT / alias
-        if a != out_path:
-            a.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Merged {len(exams)} exams, {len(all_q)} questions -> {out_path} ({out_path.stat().st_size/1024:.1f} KB)")
-    print(f"Also wrote {alt} + bcs_question_bank.json + bcs-question-bank.json")
     return out_path
 
 if __name__ == "__main__":

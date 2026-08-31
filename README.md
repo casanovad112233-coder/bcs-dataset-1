@@ -2,7 +2,7 @@
 
 > **The most complete open-source BCS Question Bank database for Bangladesh.** `41` exams (10th–50th) • `5,350` questions • `10` subjects • `825` images • UTF-8 Bangla + English • Ready for Supabase/Postgres, JSON, SQLite.
 
-[![questions](https://img.shields.io/badge/questions-5,350-blue)](Bcs_Question_Bank_Db_10th_to_50th.json) [![exams](https://img.shields.io/badge/exams-41-green)](data/processed/json) [![license](https://img.shields.io/badge/license-MIT%20%2F%20CC%20BY--4.0-lightgrey)](#license) [![source](https://img.shields.io/badge/source-uttoron.academy-orange)](#data-source--copyright-policy)
+[![questions](https://img.shields.io/badge/questions-5,350-blue)](bcs_question_bank.json) [![exams](https://img.shields.io/badge/exams-41-green)](data/processed/json) [![license](https://img.shields.io/badge/license-MIT%20%2F%20CC%20BY--4.0-lightgrey)](#license) [![source](https://img.shields.io/badge/source-uttoron.academy-orange)](#data-source--copyright-policy)
 
 **If you search `bcs_question_bank`, `bcs question bank`, `bcs database`, `bcs preliminary question bank` — this is the dataset.**
 
@@ -24,20 +24,18 @@ Per-exam counts (validated `exam.total_questions == len(questions)`):
 
 `10th:100, 11st:100, 12nd:100, 13rd:100, 14th:100, 15th:100, 16th:100, 17th:100, 18th:100, 19th:50, 20th:100, 21st:100, 22nd:100, 23rd:100, 24th:100, 25th:100, 26th:200, 27th:100, 28th:100, 29th:100, 30th:100, 31st:100, 32nd:100, 33rd:100, 34th:100, 35th:200, 36th:200, 37th:200, 38th:200, 39th:100, 40th:200, 41st:200, 42nd:100, 43rd:200, 44th:200, 45th:200, 46th:200, 47th:200, 48th:100, 49th:100, 50th:200`
 
-**Primary file (SEO-optimized names — same content):**
-* `bcs_question_bank.json` — **canonical, use this** (for `bcs_question_bank` SEO)
-* `bcs-question-bank.json` — alias
-* `Bcs_Question_Bank_Db_10th_to_50th.json` — original name + `data/processed/Bcs_Question_Bank_Db_10th_to_50th.json` mirror
+**Primary file (canonical for `bcs_question_bank` SEO):**
+* `bcs_question_bank.json` — **use this** (single source; `41` exams, `5,350` questions, `exam_slug` per row)
 * Per-exam: `data/processed/json/10th_bcs.json … 50th_bcs.json`
 
-Regenerate: `python -m pipeline.merge` (see `pipeline/merge.py:24`).
+Regenerate: `python -m pipeline.merge` (see `pipeline/merge.py:24` — writes `bcs_question_bank.json`).
 
 ---
 
 ## File structure
 
 ```
-bcs_question_bank.json                          # merged DB — start here
+bcs_question_bank.json                          # merged DB — single canonical file (SEO)
 schema.md                                       # full schema + Supabase DDL
 instructions/topics_taxonomy.md                 # 10 subjects (IDs 1..10)
 data/processed/json/*_bcs.json                  # 41 per-exam JSONs
