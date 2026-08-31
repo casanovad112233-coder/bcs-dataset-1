@@ -1,8 +1,8 @@
-"""Merge 41 per-exam JSONs into Bcs_Question_Bank_Db_10th_to_50th.json
+"""Merge 41 per-exam JSONs into bcs_preliminary_question_bank.json
 
 Usage:
     python -m pipeline.merge
-    python -m pipeline.merge --out Bcs_Question_Bank_Db_10th_to_50th.json
+    python -m pipeline.merge --out bcs_preliminary_question_bank.json
 """
 import json
 import re
@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / "data" / "processed" / "json"
-DEFAULT_OUT = ROOT / "bcs_question_bank.json"  # canonical SEO name
+DEFAULT_OUT = ROOT / "bcs_preliminary_question_bank.json"  # canonical SEO name for bcs preliminary question bank
 
 def exam_num(slug: str) -> int:
     m = re.match(r"(\d+)", slug)
@@ -19,8 +19,8 @@ def exam_num(slug: str) -> int:
 
 def merge(out_path: Path = DEFAULT_OUT):
     files = sorted([p for p in SRC_DIR.glob("*_bcs.json") if p.name != out_path.name])
-    # also exclude merged file itself if it lives in same dir
-    files = [p for p in files if p.name != "Bcs_Question_Bank_Db_10th_to_50th.json"]
+    # also exclude merged file itself if it lives in same dir (legacy names)
+    files = [p for p in files if p.name not in ("Bcs_Question_Bank_Db_10th_to_50th.json", "bcs_question_bank.json", "bcs_preliminary_question_bank.json")]
 
     taxonomy = None
     exams = []
@@ -50,8 +50,8 @@ def merge(out_path: Path = DEFAULT_OUT):
 
     merged = {
         "metadata": {
-            "title": "BCS Question Bank Database 10th to 50th",
-            "name": "Bcs_Question_Bank_Db_10th_to_50th",
+            "title": "BCS Preliminary Question Bank Database 10th to 50th",
+            "name": "bcs_preliminary_question_bank",
             "version": "1.0",
             "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "total_exams": len(exams),

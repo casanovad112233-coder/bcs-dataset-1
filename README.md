@@ -1,10 +1,10 @@
-# bcs_question_bank — BCS Question Bank Database (10th to 50th BCS) | Bangladesh Civil Service Preliminary
+# bcs_preliminary_question_bank — BCS Preliminary Question Bank Database (10th to 50th BCS) | Bangladesh Civil Service
 
 > **The most complete open-source BCS Question Bank database for Bangladesh.** `41` exams (10th–50th) • `5,350` questions • `10` subjects • `825` images • UTF-8 Bangla + English • Ready for Supabase/Postgres, JSON, SQLite.
 
-[![questions](https://img.shields.io/badge/questions-5,350-blue)](bcs_question_bank.json) [![exams](https://img.shields.io/badge/exams-41-green)](data/processed/json) [![license](https://img.shields.io/badge/license-MIT%20%2F%20CC%20BY--4.0-lightgrey)](#license) [![source](https://img.shields.io/badge/source-uttoron.academy-orange)](#data-source--copyright-policy)
+[![questions](https://img.shields.io/badge/questions-5,350-blue)](bcs_preliminary_question_bank.json) [![exams](https://img.shields.io/badge/exams-41-green)](data/processed/json) [![license](https://img.shields.io/badge/license-MIT%20%2F%20CC%20BY--4.0-lightgrey)](#license) [![source](https://img.shields.io/badge/source-uttoron.academy-orange)](#data-source--copyright-policy)
 
-**If you search `bcs_question_bank`, `bcs question bank`, `bcs database`, `bcs preliminary question bank` — this is the dataset.**
+**If you search `bcs_preliminary_question_bank`, `bcs_question_bank`, `bcs preliminary question bank`, `bcs question bank`, `bcs database` — this is the dataset.**
 
 ---
 
@@ -24,18 +24,18 @@ Per-exam counts (validated `exam.total_questions == len(questions)`):
 
 `10th:100, 11st:100, 12nd:100, 13rd:100, 14th:100, 15th:100, 16th:100, 17th:100, 18th:100, 19th:50, 20th:100, 21st:100, 22nd:100, 23rd:100, 24th:100, 25th:100, 26th:200, 27th:100, 28th:100, 29th:100, 30th:100, 31st:100, 32nd:100, 33rd:100, 34th:100, 35th:200, 36th:200, 37th:200, 38th:200, 39th:100, 40th:200, 41st:200, 42nd:100, 43rd:200, 44th:200, 45th:200, 46th:200, 47th:200, 48th:100, 49th:100, 50th:200`
 
-**Primary file (canonical for `bcs_question_bank` SEO):**
-* `bcs_question_bank.json` — **use this** (single source; `41` exams, `5,350` questions, `exam_slug` per row)
+**Primary file (canonical for `bcs_preliminary_question_bank` SEO):**
+* `bcs_preliminary_question_bank.json` — **use this** (single source; `41` exams, `5,350` questions, `exam_slug` per row)
 * Per-exam: `data/processed/json/10th_bcs.json … 50th_bcs.json`
 
-Regenerate: `python -m pipeline.merge` (see `pipeline/merge.py:24` — writes `bcs_question_bank.json`).
+Regenerate: `python -m pipeline.merge` (see `pipeline/merge.py:14` — writes `bcs_preliminary_question_bank.json`).
 
 ---
 
 ## File structure
 
 ```
-bcs_question_bank.json                          # merged DB — single canonical file (SEO)
+bcs_preliminary_question_bank.json              # merged DB — single canonical file (SEO)
 schema.md                                       # full schema + Supabase DDL
 instructions/topics_taxonomy.md                 # 10 subjects (IDs 1..10)
 data/processed/json/*_bcs.json                  # 41 per-exam JSONs
@@ -52,7 +52,7 @@ manual_verification_10th_50th.html              # human-verify image-only / blan
 **Python (merged DB):**
 ```python
 import json, pathlib
-db = json.loads(pathlib.Path("bcs_question_bank.json").read_text(encoding="utf-8"))
+db = json.loads(pathlib.Path("bcs_preliminary_question_bank.json").read_text(encoding="utf-8"))
 print(db["metadata"])  # total_exams 41, total_questions 5350
 q = db["questions"][0] # has exam_slug, subject_id, question, option_a..d, correct_answer, solve_note, has_image...
 by_17th = [q for q in db["questions"] if q["exam_slug"]=="17th_bcs"]
@@ -67,7 +67,7 @@ print(data["exam"]) # title/date/set_code/total_questions
 
 **Node / Supabase seed:**
 ```js
-import db from './bcs_question_bank.json' assert {type:'json'};
+import db from './bcs_preliminary_question_bank.json' assert {type:'json'};
 // db.questions is 5,350 rows ready for bulk insert
 // supabase.from('questions').insert(db.questions)
 ```
@@ -131,33 +131,33 @@ Any contribution is welcome — especially **answer/solve-note corrections, miss
 2. Run validation: `python -m pipeline.validate` and `python -m pipeline.merge`
 3. PR with before/after + source link (e.g., `livepublications`, `biddabari`).
 
-Issues: `https://github.com/<you>/bcs_question_bank/issues`
+Issues: `https://github.com/<you>/bcs_preliminary_question_bank/issues`
 
 ---
 
 ## Keywords (for search)
 
-`bcs_question_bank` `bcs question bank` `bcs database` `bcs question database` `bcs preliminary` `bcs 10th to 50th` `bcs 10th-50th` `bangladesh civil service` `bcs psc` `bcs preparation` `bcs model test` `bcs json` `bcs dataset` `uttoron bcs` `bcs supabase`
+`bcs_preliminary_question_bank` `bcs preliminary question bank` `bcs_question_bank` `bcs question bank` `bcs database` `bcs question database` `bcs preliminary` `bcs 10th to 50th` `bcs 10th-50th` `bangladesh civil service` `bcs psc` `bcs preparation` `bcs model test` `bcs json` `bcs dataset` `uttoron bcs` `bcs supabase`
 
 ---
 
 ## License
 
 * **Code** (`pipeline/`, `*.py`, `*.html` generators): **MIT**
-* **Data** (`data/processed/json/`, `bcs_question_bank.json`, `images/`): **CC BY 4.0** — free to share/adapt with attribution to this repo + original source `uttoron.academy`. If your jurisdiction requires NC, treat commercial use as needing permission.
+* **Data** (`data/processed/json/`, `bcs_preliminary_question_bank.json`, `images/`): **CC BY 4.0** — free to share/adapt with attribution to this repo + original source `uttoron.academy`. If your jurisdiction requires NC, treat commercial use as needing permission.
 
 ---
 
 ## Citation
 
 ```bibtex
-@dataset{bcs_question_bank_2026,
-  title  = {BCS Question Bank — 10th to 50th BCS (5,350 Q, 41 exams)},
+@dataset{bcs_preliminary_question_bank_2026,
+  title  = {BCS Preliminary Question Bank — 10th to 50th BCS (5,350 Q, 41 exams)},
   author = {BCS Open Source Contributors},
   year   = {2026},
-  url    = {https://github.com/<you>/bcs_question_bank},
+  url    = {https://github.com/<you>/bcs_preliminary_question_bank},
   note   = {Source: uttoron.academy, scraped and cleaned; UTF-8, exam_slug per row}
 }
 ```
 
-**Star & share if this saved you time — it helps others find `bcs_question_bank` on GitHub.**
+**Star & share if this saved you time — it helps others find `bcs_preliminary_question_bank` on GitHub.**
