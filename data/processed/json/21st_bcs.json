@@ -455,13 +455,11 @@
       "option_d": "devoted dedicated",
       "correct_answer": "C",
       "solve_note": "",
-      "question_image_paths": [
-        "images/21st_bcs/q21_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [
         "images/21st_bcs/q21_img2.jpg"
       ],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 1,
       "has_image": 1,
       "subject_en": "English Language & Literature",

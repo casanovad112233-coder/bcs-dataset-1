@@ -449,13 +449,11 @@
       "option_d": "Immediate",
       "correct_answer": "C",
       "solve_note": "Extempore- পূর্বপ্রস্তুতিহীন; উপস্থিত। Planned- পরিকল্পিত; Improvise- তাৎক্ষণিক ভাবে উদ্ভাবন বা প্রস্তুত করা; Impromptu - প্রত্যুৎপন্ন; পূর্বপ্রস্তুতিহীন; Immediate- তাৎক্ষণিক। এখানে extempore এর synonym হলো Impromptu. Improvise অর্থের দিক দিয়ে সমার্থক হলেও parts of speech হিসেবে ভিন্ন।",
-      "question_image_paths": [
-        "images/32nd_bcs/q21_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -527,13 +525,11 @@
       "option_d": "We were as surprised as Rahman.",
       "correct_answer": "D",
       "solve_note": "We were no more surprised than Rahman. অর্থ- আমরা রহমানের চেয়ে বেশি বিস্মিত ছিলাম না। যার অর্থ হলো We were as surprised as (not more than) Rahman. (আমরা রহমানের মতো বিস্মিত ছিলাম)। সুতরাং, অর্থ বিবেচনায় (ঘ) অপশনটিই সঠিক।",
-      "question_image_paths": [
-        "images/32nd_bcs/q25_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -567,13 +563,11 @@
       "option_d": "had better got",
       "correct_answer": "C",
       "solve_note": "Had better এর পর verb এর base form বসে। যেমন: You had better hurry now.",
-      "question_image_paths": [
-        "images/32nd_bcs/q27_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -607,13 +601,11 @@
       "option_d": "put together his ideas",
       "correct_answer": "A",
       "solve_note": "Get something across to somebody অর্থ- কাউকে কিছু বোঝাতে পারা অর্থাৎ make something understood.",
-      "question_image_paths": [
-        "images/32nd_bcs/q29_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -647,13 +639,11 @@
       "option_d": "their",
       "correct_answer": "D",
       "solve_note": "Every + singular noun subject হলে তার পরবর্তী pronoun টিও singular হবে। Their হলে plural, তাই এখানে singular pronoun ‘his/her’ হবে।",
-      "question_image_paths": [
-        "images/32nd_bcs/q31_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -668,13 +658,11 @@
       "option_d": "will respond.",
       "correct_answer": "B",
       "solve_note": "Verb কে modify করে adverb এবং verb এর পরে adverb বসে। যেমন: He speaks fluently. ‘Diagnose’ transitive verb (সকর্মক ক্রিয়া)। তাই Diagnose + object + adverb বসবে। Perfect এর adverb হলো perfectly.",
-      "question_image_paths": [
-        "images/32nd_bcs/q32_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -689,13 +677,11 @@
       "option_d": "watch",
       "correct_answer": "D",
       "solve_note": "By এর পর gerund বসে। অর্থাৎ by + verb + ing. তাই watch এর পরিবর্তে watching হবে।",
-      "question_image_paths": [
-        "images/32nd_bcs/q33_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -710,13 +696,11 @@
       "option_d": "Joy : emotion",
       "correct_answer": "B",
       "solve_note": "Writer (লেখক) কাজ করে words (শব্দ) নিয়ে এবং Baker (রুটি প্রস্তুতকারক) কাজ করে butter (মাখন) নিয়ে।",
-      "question_image_paths": [
-        "images/32nd_bcs/q34_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -769,13 +753,11 @@
       "option_d": "It is unlikely that nothing bad has happened.",
       "correct_answer": "C",
       "solve_note": "No news is good news. একটি প্রবাদ, যার অর্থ - কোনো খবর না থাকাটাই সুখবর। অর্থাৎ It is likely that nothing bad has happened. (সম্ভবত খারাপ কিছু ঘটেনি)।",
-      "question_image_paths": [
-        "images/32nd_bcs/q37_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"

@@ -569,13 +569,11 @@
       "option_d": "his",
       "correct_answer": "D",
       "solve_note": "‘Each of the sons’ এর এক বচন each তাই এর পরিবর্তে his/ her ব্যবহার করা যায়। যেহেতু son পুরুষবাচক তাই his হবে।",
-      "question_image_paths": [
-        "images/33rd_bcs/q27_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "33rd_bcs"
@@ -704,13 +702,11 @@
       "option_d": "for receiving",
       "correct_answer": "A",
       "solve_note": "Look forward to, with a view to, be used to, get used to ইত্যাদির পর কোনো verb আসলে উক্ত verb এর সাথে ing যুক্ত হয়। সুতরাং সঠিক উত্তর হবে ‘to receiving’.",
-      "question_image_paths": [
-        "images/33rd_bcs/q34_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "33rd_bcs"

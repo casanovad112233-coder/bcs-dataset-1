@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "title": "BCS Question Bank Database 10th to 50th",
-    "name": "Bcs_Question_Bank_Db_10th_to_50th",
+    "title": "BCS Preliminary Question Bank Database 10th to 50th",
+    "name": "bcs_preliminary_question_bank",
     "version": "1.0",
-    "generated_at": "2026-08-30T23:42:20.788288Z",
+    "generated_at": "2026-08-31T01:25:51.286856+00:00",
     "total_exams": 41,
     "total_questions": 5350,
-    "source": "data/processed/json/*_bcs.json (merged)",
-    "taxonomy_source": "instructions/topics_taxonomy.md"
+    "source": "data/processed/json/*_bcs.json",
+    "taxonomy_source": "topics_taxonomy.md"
   },
   "taxonomy": [
     {
@@ -21037,13 +21037,11 @@
       "option_d": "devoted dedicated",
       "correct_answer": "C",
       "solve_note": "",
-      "question_image_paths": [
-        "images/21st_bcs/q21_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [
         "images/21st_bcs/q21_img2.jpg"
       ],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 1,
       "has_image": 1,
       "subject_en": "English Language & Literature",
@@ -23759,13 +23757,11 @@
       "option_d": "Restriction … Relaxation",
       "correct_answer": "C",
       "solve_note": "এখানে মূলশব্দ Submission অর্থ হলো আনুগত্য, নম্রতা, বশ্যতা আর Yielding অর্থ হলো নম্র, বিনয়ী। অন্যদিকে, Subjection পরাধীনতা, বশ্যতা, দমন ইত্যাদি। Liberation- মুক্তি, স্বাধীনতা। Restrain- দমন করা, নিয়ন্ত্রণ করা, বাঁধা প্রদান। Indulge-সাধ মিটানো, পরিতৃপ্ত করা; Compliant - রাজী, সম্মত। Acquiescent- সম্মতি, রাজী, মৌনসম্মতি। Restriction- বাঁধা, নিষেধ। Relaxation- প্রশমন , শ্লথ, কম কঠোরতাপূর্ণ। এখানে মূল জোড়ায় সম্পর্ক হলো যে ব্যক্তি Yielding (নম্র) তার মধ্যেই থাকে Submission (নম্রতা)। অনুরূপ উত্তর Compliant ….. Acquiescent তে দেখা যাচ্ছে, যার মধ্যে Acquiescent আছে সে-ই Compliant (সম্মত)।",
-      "question_image_paths": [
-        "images/22nd_bcs/q61_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23780,13 +23776,11 @@
       "option_d": "Irresolute … Indecisive",
       "correct_answer": "D",
       "solve_note": "এখানে মূল শব্দ Vacillate অর্থ দ্বিধান্বিত হওয়া বা ইতস্তত করা এবং Hesitate অর্থও ইতস্তত করা, দ্বিধান্বিত হওয়া, সিদ্ধান্তহীনতায় ভোগা প্রভৃতি। অন্যদিকে Persevere- অধ্যবসায়ী হওয়া, নিরবিচ্ছিন্ন মনোযোগ সহকারে কাজ করা, Waiver- স্বত্বত্যাগ, দাবির পরিত্যাগ, না-দাবিকরণ প্রভৃতি। Impulsive- আবেগ তাড়িত, আবেগ প্রবৃত্ত, অন্তরাবেগ চালিত, Deliberate- সুচিন্তিত, ইচ্ছাকৃত, উদ্দেশ্য প্রণোদিত প্রভৃতি। Obstinate- একগুয়ে, জেদি, দুর্দমনীয়। Accommodating-অমায়িক, নম্র ,ভদ্র। Irresolute- অস্থির চিত্ত, অস্থির মতি, চলচিত্ত প্রভৃত্তি। Indecisive- অনিশ্চিত, অস্থিরমতি, দ্বিধান্বিত ইত্যাদি। ওপরের বিশ্লেষণে দেখা যায় Irresolute ... Indecisive বাদে কোনো জোড়াতেই Synonymous সম্পর্ক বুঝাচ্ছে না।",
-      "question_image_paths": [
-        "images/22nd_bcs/q62_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23801,13 +23795,11 @@
       "option_d": "Endorse … Ratify",
       "correct_answer": "A",
       "solve_note": "মূল শব্দ Assert অর্থ দাবি করা, দৃঢ়ভাবে ঘোষণা করা, এবং Dissent অর্থ আপত্তি করা, অনুমোদন করতে অস্বীকার করা। এ শব্দজোড়া পরস্পর বিপরীত অর্থ প্রকাশ করছে। ‘ক’ তে আছে- Affirm - দৃঢ়ভাবে ঘোষণা করা, নিশ্চিত রূপে বলা। Object - আপত্তি করা, অভিযোগ করা, অস্বীকার করা। ‘খ’ তে আছে Reject- বাতিল করা, প্রত্যাখ্যান করা, অগ্রাহ্য করা। Disapprove- প্রত্যাখ্যান করা, বাতিল করা, অনুমোদন না করা। ‘গ’ তে আছে- Acknowledge- স্বীকার করা, মেনে নেওয়া, প্রাপ্তি স্বীকার। Recognize- স্বীকৃতি দেওয়া, চিনতে পারা প্রভৃতি। ‘ঘ’ তে আছে-Endorse- অনুমোদন করা। Ratify- অনুমোদন করা ও দেয়া । ওপরের choice গুলোর শব্দ জোড়া বিশ্লেষণ করলে দেখা যায় মূল শব্দ জোড়ার সঙ্গে একমাত্র choice ‘ক’- এর শব্দ জোড়ারই মিল রয়েছে।",
-      "question_image_paths": [
-        "images/22nd_bcs/q63_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23822,13 +23814,11 @@
       "option_d": "Observe … Blur",
       "correct_answer": "C",
       "solve_note": "এখানে মূল শব্দ জোড়ার Distort অর্থ বিকৃত করা এবং Twist অর্থ মোচড়ানো, বিকৃত করা প্রভৃতি। অর্থাৎ শব্দ জোড়া পরস্পর সমার্থক অর্থ প্রকাশ করছে। আছে-Straighten - সোজা করা। Bend- বাকানো আছে-Deform- বিকৃতকরণ। Reform– সংশোধন। Harmonize- সমন্বয় সাধন করা, খাপ খাওয়া। Balance- সদৃশ করা, ভারসাম্য অবস্থান রাখা। Observe- পর্যবেক্ষণ করা, পালন করা, উদযাপন করা। Blur- দুর্বোধ্য, অস্পষ্ট, কলংক, দাগ। অপশন গুলোর মধ্যে শুধুমাত্র Harmonize … Balance. উত্তরের শব্দ জোড়াই পরস্পর সমার্থক অর্থ প্রকাশ করছে।",
-      "question_image_paths": [
-        "images/22nd_bcs/q64_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23843,13 +23833,11 @@
       "option_d": "at",
       "correct_answer": "C",
       "solve_note": "Entrusted with + something - কোনো কিছুতে আস্থা স্থাপন করা। Entrusted এর সাথে for, at – কখনোই বসে না। Entrusted to someone- কোনো ব্যক্তি বা ব্যক্তিবর্গকে বিশ্বাস করা; Entrusted with – দ্বারা কোন বস্তুতে বিশ্বাস স্থাপন করা বোঝায়। যেহেতু শূন্যস্থানের পরে elected politicians দ্বারা ব্যক্তিবর্গ নির্দেশ করছে। তাই এখানে entrusted to বসবে।",
-      "question_image_paths": [
-        "images/22nd_bcs/q65_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23940,13 +23928,11 @@
       "option_d": "figure",
       "correct_answer": "B",
       "solve_note": "বাক্যে have অর্থ হলো খাওয়া। এক্ষেত্রে balanced food এবং balanced diet ব্যবহারের সম্ভবনা রয়েছে। Outlook (দৃশ্য) এবং figure (সংখ্যা) খাওয়া যায় না। সুতরাং diet এবং food - এর মধ্যে balanced food -এ জাতীয় phrase এর ব্যবহার তেমন দেখা যায় না। তাছাড়া food - এর আগে a বসানো যায় না, diet - এর আগে বসে।",
-      "question_image_paths": [
-        "images/22nd_bcs/q70_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23961,13 +23947,11 @@
       "option_d": "cressed (crossed)",
       "correct_answer": "D",
       "solve_note": "Keeping fingers raised, keeping fingers pointed or keeping fingers lifted এ জাতীয় phrase সচরাচার দেখা যায় না। কিন্তু keep one's fingers crossed (cressed) অর্থ হলো আশা পোষণ করা, কামনা করা। সুতরাং cressed (crossed).",
-      "question_image_paths": [
-        "images/22nd_bcs/q71_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -23982,13 +23966,11 @@
       "option_d": "defered",
       "correct_answer": "A",
       "solve_note": "pledge- অঙ্গীকার করা, প্রতিজ্ঞা করা, জামানত রাখা। provide- সরবরাহ করা, সংস্থান করা। defere- বিলম্বিত করা, স্থগিত করা/মুলতবি করা। disavow- অস্বীকার করা। সুতরাং অর্থানুসারে pledged ই- most appropriate।",
-      "question_image_paths": [
-        "images/22nd_bcs/q72_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -24003,13 +23985,11 @@
       "option_d": "Bubble",
       "correct_answer": "B",
       "solve_note": "Cul-de-sac একটি ফরাসি শব্দ, যার অর্থ হলো কানাগলি। অন্যদিকে, Selection- নির্বাচন; Dead end- কানাগলি; Error- ভুল ; Bubble- বুদবুদ, অবাস্তব, চিন্তা বা পরিকল্পনা।",
-      "question_image_paths": [
-        "images/22nd_bcs/q73_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -24024,13 +24004,11 @@
       "option_d": "Unobstructed view",
       "correct_answer": "B",
       "solve_note": "Parcel অর্থ হলো মোড়ক, এর আরেক অর্থ হলো এক খণ্ড জমি। Quarrel- ঝগড়া, বিবাদ, Piece of land- জমির টুকরো; Postage- ডাকমাশুল; Unobstructed view- বাধাহীন দৃষ্টি।",
-      "question_image_paths": [
-        "images/22nd_bcs/q74_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -24045,13 +24023,11 @@
       "option_d": "Noise-maker",
       "correct_answer": "A",
       "solve_note": "Ruminant অর্থ হলো জাবর কাটা প্রাণী। অন্যদিকে, Cud-chewing animal- জাবর কাটা প্রাণী; Soup- ঝোল; Gossip- খোশগল্প; Noise-maker-শোরগোলকারী।",
-      "question_image_paths": [
-        "images/22nd_bcs/q75_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "22nd_bcs"
@@ -40586,13 +40562,11 @@
       "option_d": "None of these",
       "correct_answer": "C",
       "solve_note": "Keep one’s head- মাথা ঠাণ্ডা রাখা অর্থাৎ keep calm.",
-      "question_image_paths": [
-        "images/30th_bcs/q32_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "30th_bcs"
@@ -40645,13 +40619,11 @@
       "option_d": "He is known to me.",
       "correct_answer": "D",
       "solve_note": "Know এর পরে to বসে।",
-      "question_image_paths": [
-        "images/30th_bcs/q35_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "30th_bcs"
@@ -40723,13 +40695,11 @@
       "option_d": "funds",
       "correct_answer": "A",
       "solve_note": "Out of one's wits একটি idiom, যার অর্থ অত্যন্ত বিচলিত।",
-      "question_image_paths": [
-        "images/30th_bcs/q39_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "30th_bcs"
@@ -44259,13 +44229,11 @@
       "option_d": "Immediate",
       "correct_answer": "C",
       "solve_note": "Extempore- পূর্বপ্রস্তুতিহীন; উপস্থিত। Planned- পরিকল্পিত; Improvise- তাৎক্ষণিক ভাবে উদ্ভাবন বা প্রস্তুত করা; Impromptu - প্রত্যুৎপন্ন; পূর্বপ্রস্তুতিহীন; Immediate- তাৎক্ষণিক। এখানে extempore এর synonym হলো Impromptu. Improvise অর্থের দিক দিয়ে সমার্থক হলেও parts of speech হিসেবে ভিন্ন।",
-      "question_image_paths": [
-        "images/32nd_bcs/q21_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44337,13 +44305,11 @@
       "option_d": "We were as surprised as Rahman.",
       "correct_answer": "D",
       "solve_note": "We were no more surprised than Rahman. অর্থ- আমরা রহমানের চেয়ে বেশি বিস্মিত ছিলাম না। যার অর্থ হলো We were as surprised as (not more than) Rahman. (আমরা রহমানের মতো বিস্মিত ছিলাম)। সুতরাং, অর্থ বিবেচনায় (ঘ) অপশনটিই সঠিক।",
-      "question_image_paths": [
-        "images/32nd_bcs/q25_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44377,13 +44343,11 @@
       "option_d": "had better got",
       "correct_answer": "C",
       "solve_note": "Had better এর পর verb এর base form বসে। যেমন: You had better hurry now.",
-      "question_image_paths": [
-        "images/32nd_bcs/q27_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44417,13 +44381,11 @@
       "option_d": "put together his ideas",
       "correct_answer": "A",
       "solve_note": "Get something across to somebody অর্থ- কাউকে কিছু বোঝাতে পারা অর্থাৎ make something understood.",
-      "question_image_paths": [
-        "images/32nd_bcs/q29_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44457,13 +44419,11 @@
       "option_d": "their",
       "correct_answer": "D",
       "solve_note": "Every + singular noun subject হলে তার পরবর্তী pronoun টিও singular হবে। Their হলে plural, তাই এখানে singular pronoun ‘his/her’ হবে।",
-      "question_image_paths": [
-        "images/32nd_bcs/q31_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44478,13 +44438,11 @@
       "option_d": "will respond.",
       "correct_answer": "B",
       "solve_note": "Verb কে modify করে adverb এবং verb এর পরে adverb বসে। যেমন: He speaks fluently. ‘Diagnose’ transitive verb (সকর্মক ক্রিয়া)। তাই Diagnose + object + adverb বসবে। Perfect এর adverb হলো perfectly.",
-      "question_image_paths": [
-        "images/32nd_bcs/q32_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44499,13 +44457,11 @@
       "option_d": "watch",
       "correct_answer": "D",
       "solve_note": "By এর পর gerund বসে। অর্থাৎ by + verb + ing. তাই watch এর পরিবর্তে watching হবে।",
-      "question_image_paths": [
-        "images/32nd_bcs/q33_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44520,13 +44476,11 @@
       "option_d": "Joy : emotion",
       "correct_answer": "B",
       "solve_note": "Writer (লেখক) কাজ করে words (শব্দ) নিয়ে এবং Baker (রুটি প্রস্তুতকারক) কাজ করে butter (মাখন) নিয়ে।",
-      "question_image_paths": [
-        "images/32nd_bcs/q34_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -44579,13 +44533,11 @@
       "option_d": "It is unlikely that nothing bad has happened.",
       "correct_answer": "C",
       "solve_note": "No news is good news. একটি প্রবাদ, যার অর্থ - কোনো খবর না থাকাটাই সুখবর। অর্থাৎ It is likely that nothing bad has happened. (সম্ভবত খারাপ কিছু ঘটেনি)।",
-      "question_image_paths": [
-        "images/32nd_bcs/q37_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "32nd_bcs"
@@ -46331,13 +46283,11 @@
       "option_d": "his",
       "correct_answer": "D",
       "solve_note": "‘Each of the sons’ এর এক বচন each তাই এর পরিবর্তে his/ her ব্যবহার করা যায়। যেহেতু son পুরুষবাচক তাই his হবে।",
-      "question_image_paths": [
-        "images/33rd_bcs/q27_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "33rd_bcs"
@@ -46466,13 +46416,11 @@
       "option_d": "for receiving",
       "correct_answer": "A",
       "solve_note": "Look forward to, with a view to, be used to, get used to ইত্যাদির পর কোনো verb আসলে উক্ত verb এর সাথে ing যুক্ত হয়। সুতরাং সঠিক উত্তর হবে ‘to receiving’.",
-      "question_image_paths": [
-        "images/33rd_bcs/q34_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "33rd_bcs"

@@ -660,13 +660,11 @@
       "option_d": "None of these",
       "correct_answer": "C",
       "solve_note": "Keep one’s head- মাথা ঠাণ্ডা রাখা অর্থাৎ keep calm.",
-      "question_image_paths": [
-        "images/30th_bcs/q32_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "30th_bcs"
@@ -719,13 +717,11 @@
       "option_d": "He is known to me.",
       "correct_answer": "D",
       "solve_note": "Know এর পরে to বসে।",
-      "question_image_paths": [
-        "images/30th_bcs/q35_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "30th_bcs"
@@ -797,13 +793,11 @@
       "option_d": "funds",
       "correct_answer": "A",
       "solve_note": "Out of one's wits একটি idiom, যার অর্থ অত্যন্ত বিচলিত।",
-      "question_image_paths": [
-        "images/30th_bcs/q39_img1.jpg"
-      ],
+      "question_image_paths": [],
       "solve_note_image_paths": [],
-      "has_question_image": 1,
+      "has_question_image": 0,
       "has_solve_note_image": 0,
-      "has_image": 1,
+      "has_image": 0,
       "subject_en": "English Language & Literature",
       "subject_bn": "English Language & Literature",
       "exam_slug": "30th_bcs"
