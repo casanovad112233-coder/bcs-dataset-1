@@ -10,7 +10,7 @@
 
 ## Why this exists
 
-No single, clean, machine-readable BCS database existed. Scraped pages are HTML-only, have mojibake, missing answers, and image-only questions. This repo scrapes **uttoron.academy** (source of truth), **repairs encoding, fixes 80+ errors, curates 26 image-only questions to text, adds `exam_slug` per row**, and validates every JSON before release. Use it as a **database only** — for apps, model tests, R&D, or research.
+I found no single, clean, machine-readable BCS database that met the project's requirements. I discovered many BCS question bank websites, but each had limitations: pages were often HTML-only, contained mojibake (garbled characters due to encoding issues), had missing answers. To address this, I created this repository to scrape and process the BCS preliminary question bank from **uttoron.academy** (which serves as the source of truth for the data). I repaired encoding errors, fixed over 80 issues, converted 26 image-only questions to text while retaining the original images, added an `exam_slug` to each question for better organization, and validated every JSON file before making it available. You can use this dataset for applications, mock tests, research, or any other educational purpose.
 
 ---
 
@@ -24,7 +24,7 @@ Per-exam counts (validated `exam.total_questions == len(questions)`):
 
 `10th:100, 11st:100, 12nd:100, 13rd:100, 14th:100, 15th:100, 16th:100, 17th:100, 18th:100, 19th:50, 20th:100, 21st:100, 22nd:100, 23rd:100, 24th:100, 25th:100, 26th:200, 27th:100, 28th:100, 29th:100, 30th:100, 31st:100, 32nd:100, 33rd:100, 34th:100, 35th:200, 36th:200, 37th:200, 38th:200, 39th:100, 40th:200, 41st:200, 42nd:100, 43rd:200, 44th:200, 45th:200, 46th:200, 47th:200, 48th:100, 49th:100, 50th:200`
 
-**Primary file (canonical for `bcs_preliminary_question_bank` SEO):**
+**Primary file:**
 
 - `bcs_preliminary_question_bank.json` — **use this** (single source; `41` exams, `5,350` questions, `exam_slug` per row)
 - Per-exam: `data/processed/json/10th_bcs.json … 50th_bcs.json`
@@ -105,19 +105,17 @@ Example row:
 
 **Source of truth: [uttoron.academy](https://uttoron.academy/QuestionBank) — QuestionBank / QuestionPreview pages** (`instructions/links_to_scrape.md`). This repo **scraped** those pages via Firecrawl/`scrape_questions.py` to `data/raw/html/`, then deterministically parsed to JSON.
 
-- **Copyright belongs to the original publisher.** This dataset is provided **as a database only** for educational, research, and app-development use under fair use. We **do not** republish as a coaching product or claim ownership. If you are the rights holder and want a takedown or attribution change, open an issue — we comply promptly.
+- **Copyright belongs to the original publisher.** This repository distributes structured dataset files for educational, research, data-analysis, and application-development purposes. We **do not** republish as a coaching product or claim ownership. If you are the rights holder and want a takedown or attribution change, open an issue — we comply promptly.
 - **Fixed errors:** 80+ math/text fixes, mojibake repair, `q70` option restoration (17th), 26 image-only questions curated to text (image retained). All fixes are logged in `instructions/memory.md`.
 
 ## Contributing
 
 Any contribution is welcome — especially **answer/solve-note corrections, missing images, subject fixes.**
 
-1. Fork → branch → edit `data/processed/json/*_bcs.json` **or** fix `data/raw/html/*.html` then `python -m pipeline <html>` (see `instructions/memory.md` for per-exam quirks).
-2. Run validation: `python -m pipeline.validate` and `python -m pipeline.merge`
-
 ## License
 
-**MIT** — see `LICENSE`. Free for code and data (`pipeline/`, `bcs_preliminary_question_bank.json`, `data/processed/json/`, `images/`). Attribution to this repo + original source `uttoron.academy` is appreciated.
+* **Code — MIT** — see [`LICENSE`](LICENSE) — covers `pipeline/`, `scripts/`, `validation code`, `tooling`, `*.py`, HTML generators (`17th_bcs_math.html`, etc.). Free to use/modify/distribute with attribution.
+* **Data — NOT MIT** — see [`DATA_LICENSE.md`](DATA_LICENSE.md) — covers `bcs_preliminary_question_bank.json`, `data/processed/json/`, `data/raw/html/`, `images/`, question text / options / solve notes. Copyright remains with the original publisher (`uttoron.academy` / PSC). We do **not** claim the right to re-license that content under MIT. See `DATA_LICENSE.md` for terms, fair-use disclaimer, and takedown policy.
 
 ---
 

@@ -1,4 +1,7 @@
-MIT License
+MIT License — Code Only
+
+This MIT License covers the code in this repository (pipeline/, scripts/, validation, tooling, HTML generators).
+For dataset terms (bcs_preliminary_question_bank.json, data/processed/json/, images/, question data/solve notes) see DATA_LICENSE.md — the dataset is NOT MIT.
 
 Copyright (c) 2026 BCS Open Source Contributors
 
