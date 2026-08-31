@@ -80,14 +80,20 @@
     .q-images figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
     .q-images figcaption{padding:6px 10px;font-size:.72rem;color:var(--muted);background:var(--surface-strong);border-top:1px solid var(--line);font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
     .q-images img{
-      display:block;width:100%;max-width:100%;height:auto;
+      display:block;width:auto;max-width:100%;height:auto;
       image-rendering:auto;
+      image-rendering:high-quality;
       -webkit-font-smoothing:antialiased;
     }
-    /* ensure crisp on high-DPI */
+    /* crisp without pixelation: never upscale beyond natural size, keep high quality */
     .q-images img, .s-images img{
-      image-rendering:-webkit-optimize-contrast;
-      image-rendering:crisp-edges;
+      image-rendering:auto;
+      image-rendering:high-quality;
+      max-width:100%;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      filter:none;
     }
     .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
     .option{display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:start;min-height:44px;padding:9px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
