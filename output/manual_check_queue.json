@@ -1,0 +1,3 @@
+{
+  "_comment": "Questions that still need human EYES even though their JSON record is structurally complete. Remove entries once visually confirmed. Structural issues (image-only prompts, empty options, blank answers) are detected from the JSONs automatically and do not need to be listed here."
+}

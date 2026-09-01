@@ -1,3 +1,23 @@
 .env
 instructions/PROMPT_FOR_CLAUDE_CODEX_SUPABASE.md
 instructions/Manual_Instructions.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+.env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
